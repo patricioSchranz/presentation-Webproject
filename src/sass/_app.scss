@@ -1,0 +1,30 @@
+.big-container{
+    // @include testing-border-1;
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #B9FBC0;
+    background-image: linear-gradient(
+    185deg,
+    hsl(126deg 89% 85%) 0%,
+    hsl(116deg 87% 87%) 12%,
+    hsl(106deg 86% 86%) 24%,
+    hsl(98deg 85% 86%) 37%,
+    hsl(90deg 83% 86%) 50%,
+    hsl(82deg 82% 87%) 62%,
+    hsl(76deg 81% 87%) 73%,
+    hsl(69deg 79% 87%) 83%,
+    hsl(62deg 77% 88%) 92%,
+    hsl(56deg 85% 89%) 100%
+    );
+}
+
+// .presentation{
+
+//     // &_header{
+//     //     background-color: aqua;
+//     // }
+// }

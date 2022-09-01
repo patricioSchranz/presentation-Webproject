@@ -1,0 +1,13 @@
+{
+  "name": "presentation-webapp-desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "built": "sass ./src/sass/main.scss ./public/styles/main.css --style=compressed --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
