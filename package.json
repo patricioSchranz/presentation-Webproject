@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "built": "sass ./src/sass/main.scss ./public/styles/main.css --style=compressed --watch"
+    "built": "sass ./src/sass/main.scss ./public/styles/main.css --style=compressed --watch",
+    "tsc-play": "tsc ./src/js/play-button.ts --watch",
+    "tsc-control": "tsc ./src/js/control.ts --watch"
   },
   "keywords": [],
   "author": "",

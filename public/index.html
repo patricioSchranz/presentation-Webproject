@@ -9,16 +9,644 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
+    <div class="play-wrapper">
+        <button class="play-button">
+            <img src="./pics/play.png" alt="play button">
+        </button>
+    </div>
+   
     <div class="big-container">
-        <div class="flex-container">
-            <header class="presentation_header">
-                <h1 class="presentation_h1">Mein Abschlussprojekt an der 
-                    <a href="https://csaw.at/" rel="external noopener">
-                        <abrr title="Coding School am Wörthersee">CSAW</abrr></h1>
-                    </a>
-                    <span class="heading-span">Desk Booking System</span>
-            </header>
-        </div>
-    </div>    
+
+
+
+<!-- the header of the presentation-->
+
+        <header class="presentation_header">
+            <h1 class="presentation_h1" onclick="openTheNavigation(this, 'blue')">Desk Booking System</h1>
+
+            <div class="presentation_time">
+                <span>07</span>
+                <span>17</span>
+                <span>54</span>
+            </div>
+            
+            <nav class="presentation_nav">
+                <h2 class="presentation_nav-heading">Hauptnavigation</h2>
+                <ol class="presentation_nav-list chapter" data-chapter="0">
+                    <li data-chapter="1">
+                        <span class="chapter-span">Worum geht es ?</span>
+                    </li>
+                    <li data-chapter="2">
+                        <span class="chapter-span">Verwendete Technologien und Konzepte</span>
+                    </li>
+                    <li data-chapter="3">
+                        <span class="chapter-span">Aufbau und Verwendung der App </span>
+                        <ol class="presentation_nav-list sub-chapter" data-chapter="3">
+                            <li data-sub-chapter="1">
+                                Allgemeine Startseite
+                            </li>
+                            <li data-sub-chapter="2">
+                                User Landing Page
+                            </li>
+                            <li data-sub-chapter="3">
+                                Reservierungen
+                            </li>
+                            <li data-sub-chapter="4">
+                                Favoriten
+                            </li>
+                            <li data-sub-chapter="5">
+                                Tisch buchen
+                            </li>
+                            <li data-sub-chapter="6">
+                                Profil
+                            </li>
+                            <li data-sub-chapter="7">
+                                Admin Landing Page / Hot Zone
+                            </li>
+                            <li data-sub-chapter="8">
+                                Kommentare
+                            </li>
+                            <li data-sub-chapter="9">
+                                Fix Desk Anfragen
+                            </li>
+                            <li data-sub-chapter="10">
+                             Userliste
+                            </li>
+                       </ol>
+                    </li>
+                    <li data-chapter="4">
+                        <span class="chapter-span">Projektplanung und Organisation</span>
+                        <ol class="presentation_nav-list sub-chapter" data-chapter="4">
+                            <li data-sub-chapter="1">
+                                Initiale Besprechung
+                            </li>
+                            <li data-sub-chapter="2">
+                                Gitlab und Scrumban
+                            </li>
+                        </ol>
+                    </li>
+                    <li data-chapter="5">
+                        <span class="chapter-span">Meine Aufgaben</span>
+                        <ol class="presentation_nav-list sub-chapter" data-chapter="5">
+                            <li data-sub-chapter="1">
+                                Übersicht
+                            </li>
+                            <li data-sub-chapter="2">
+                                Im Fokus - Postman Collection
+                            </li>
+                            <li data-sub-chapter="3">
+                                Im Fokus - die Routen der App
+                            </li>
+                            <li data-sub-chapter="4">
+                                Im Fokus - Booking Page
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </nav>
+        </header>
+
+
+
+<!-- the presentation -->
+
+        <main class="presentation_main">
+
+    <!-- intro -->
+            <section class="presentation_section">
+                <h2 class="presentation_intro-heading">
+                    <span class="presentation_intro-heading_accompanying">
+                        Meine Abschlussarbeit an der <abbr title="Coding School am Wörthersee">CSAW</abbr>
+                    </span>
+                    <span class="presentation_intro-heading_main-title">Desk Booking System</span>
+                </h2>
+
+                <figure class="presentation_intro-image-figure">
+                    <img src="./pics/landing-page.png" alt="landing page der app">
+                    <img src="./pics/booking.png" alt="booking page der app">
+                    <img src="./pics/reservations.png" alt="reservations page der app">
+                    <img src="./pics/profile.png" alt="profile page der app">
+                    <img src="./pics/desk-requests.png" alt="desk requests page der app">
+              </figure>
+            </section>
+
+    <!-- worum geht es ?-->
+            <section class="presentation_section" data-section-id="1">
+                <h2 class='presentation_heading-2'>Worum geht es ?</h2>
+
+                <figure class="presentation_figure">
+                    <img src="pics/office.jpg" alt="ein Office">
+                </figure>
+
+                <ul class="presentation_key-points">
+                    <li>
+                        ist eine Single Page Application die das Buchen von Arbeitsplätzen ermöglicht
+                    </li>
+                    <li>
+                        Flex Desk Buchung => maximal 3 Tage in Folge
+                    </li>
+                    <li>
+                        Fix Desk Buchung => unbefristet
+                    </li>
+                    <li>
+                        insgesamt 4 Räumlichkeiten mit 96 Arbeitsplätzen
+                    </li>
+                </ul>
+            </section>
+
+    <!-- verwendete technologien und konzepte -->
+            <section class="presentation_section" data-section-id="2">
+                <h2 class='presentation_heading-2'>Verwendete Technologien und Konzepte</h2>
+
+                <figure class="presentation_figure">
+                    <img src="pics/JavaScript.png" alt="JavaScript Logo" class="logo-img">
+                    <img src="pics/react.png" alt="React Logo" class="logo-img">
+                    <img src="pics/postman.png" alt="Postman Logo" class="logo-img">
+                    <img src="pics/gitlab.png" alt="Gitlab Logo" class="logo-img">
+                    <img src="pics/sass.png" alt="Sass Logo" class="logo-img">
+                    <img src="pics/figma.png" alt="Figma Logo" class="logo-img">
+                </figure>
+
+                <ul class="presentation_key-points">
+                    <li>
+                        Gitlab => gemeinsame Arbeit am Code und Projektplanung
+                    </li>
+                    <li>
+                        Figma => Mockup und Designentwurf
+                    </li>
+                    <li>
+                        React => JS Framework
+                    </li>
+                    <li>
+                        Vanilla JavaScript => Logik
+                    </li>
+                    <li>
+                        SASS => Styling
+                    </li>
+                    <li>
+                        Postman => API Testen
+                    </li>
+                    <li>
+                        Fetch API => Kommunikation mit dem Backend
+                    </li>
+                    <li>
+                        React Loader Spinner => Ladevorgang visualisieren
+                    </li>  
+                </ul>
+            </section>
+
+    <!-- aufbau und verwendung der app-->
+            <section class="presentation_section" data-section-id="3">
+                <h2 class='presentation_heading-2'>Aufbau und Verwendung der App</h2>
+
+        <!-- allgemeine startseite -->
+                <section class="presentation_sub-section sub-visible" data-sub-section-count="1" tabindex="1">
+                    <h3 class="presentation_heading-3">Allgemeine Startseite</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/landing-page-xs-small.png" alt="Landing Page der App"> 
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                          Registrierung
+                        </li>
+                        <li>
+                           Anmeldung
+                        </li>
+                        <li>
+                            Token und ID werden in das Local Storage gespeichert
+                        </li>
+                        <li>
+                            Userdaten werden von der API geholt und auch Lokal gespeichert
+                        </li>
+                        <li>
+                            Rollenbezogene Pfadweiterleitung
+                        </li>
+                        <li>
+                            Solange Userdaten im Storage vorhanden sind findet die Weiterleitung bei jedem Aufruf der App statt
+                        </li>
+                    </ul>
+                </section>
+
+        <!-- user landing page -->
+                <section class="presentation_sub-section" data-sub-section-count="2" tabindex="1">
+                    <h3 class="presentation_heading-3">User Landing Page</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/user-landing-page-xs.png" alt="User Landing Page der App">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                           Überblick über seine nächsten drei anstehenden Reservierungen
+                        </li>
+                        <li>
+                            Navigation auf normalen User beschränkt
+                        </li>
+                    </ul>
+                </section>
+
+        <!-- reservierungen -->
+                <section class="presentation_sub-section" data-sub-section-count="3" tabindex="1">
+                    <h3 class="presentation_heading-3">Reservierungen</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/reservations-xs.png" alt="User Landing Page der App">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                         Auflistung aller Reservierunge => getrennt in zukünftige und vergangene
+                        </li>
+                        <li>
+                           Flex Desk Buchungen können bis 1 Tag vor der Reservierung storniert werden
+                        </li>
+                        <li>
+                            bei vergangenen Buchungen können Kommentare abgegeben werden
+                        </li>
+                        <li>
+                            bereits besuchte Tische kann man als Favorit markieren
+                        </li>
+                    </ul>
+                </section>
+
+        <!-- favoriten -->
+                <section class="presentation_sub-section" data-sub-section-count="4" tabindex="1">
+                    <h3 class="presentation_heading-3">Favoriten</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/favourites-xs.png" alt="User Landing Page der App">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                         Übersicht über alle Favoriten
+                        </li>
+                        <li>
+                          Information ob Favorit gerade als Fix Desk in Verwendung ist => steht dann für eine Buchung nicht zur Verfügung
+                        </li>
+                        <li>
+                            Möglichkeit Favorit aus Favoriten Liste zu löschen
+                        </li>
+                        <li>
+                            Suchfunktion => schnelles Suchen nach freien Favoriten zu einen bestimmten Zeitpunkt
+                        </li>
+                    </ul>
+                </section>
+
+        <!-- tisch buchen -->
+                <section class="presentation_sub-section" data-sub-section-count="5" tabindex="1">
+                    <h3 class="presentation_heading-3">Tisch Buchen</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/booking-xs.png" alt="User Landing Page der App">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                         Allgemeine Suche nach einen Arbeitsplatz
+                        </li>
+                        <li>
+                          Verfügbare Tische enthalten Metainformationen
+                        </li>
+                        <li>
+                            Raumübersicht => gibt Aufschluss wo sich der Arbeitsplatz im Raum befindet
+                        </li>
+                        <li>
+                            Equipment => liefert Information über die Ausstatung des Tisches
+                        </li>
+                        <li>
+                            Kommentare => Meinungen und Informationen anderer User über diesen Arbeitsplatz
+                        </li>
+                    </ul>
+                </section>
+
+        <!-- profil -->
+                <section class="presentation_sub-section" data-sub-section-count="6" tabindex="1">
+                    <h3 class="presentation_heading-3">Profil</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/profile-xs.png" alt="User Landing Page der App">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                         Update seiner persönlichen Informationen
+                        </li>
+                        <li>
+                          von der App abmelden
+                        </li>
+                    </ul>
+                </section>
+
+        <!-- admin landing page / hot zone-->
+                <section class="presentation_sub-section" data-sub-section-count="7" tabindex="1">
+                    <h3 class="presentation_heading-3">Admin Landing Page / Hot Zone</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/admin-landing-xs.png" alt="User Landing Page der App">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                            Schnellüberblick über unerledigte Aufgaben und Neuigkeiten
+                        </li>
+                        <li>
+                          => neue Kommentare
+                        </li>
+                        <li>
+                            => unbearbeitete Fix Desk Anfragen
+                        </li>
+                        <li>
+                            => neue User
+                        </li>
+                        <li>
+                            Admin Bereiche in der Navigation verfügbar
+                        </li>
+                    </ul>
+                </section>
+
+        <!-- kommentare -->
+                <section class="presentation_sub-section" data-sub-section-count="8" tabindex="1">
+                    <h3 class="presentation_heading-3">Kommentare</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/comments-xs.png" alt="User Landing Page der App">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                            Übersicht sortiert nach alten und neuen Einträgen
+                        </li>
+                        <li>
+                          aktuelle Kommentar Anzahl wird in das Local Storage gespeichert um später zwischen neuen und alten Kommentaren unterscheiden zu können
+                        </li>
+                    </ul>
+                </section>
+
+        <!-- fix desk requests -->
+                <section class="presentation_sub-section" data-sub-section-count="9" tabindex="1">
+                    <h3 class="presentation_heading-3">Fix Desk Requests</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/desk-requests-xs.png" alt="User Landing Page der App">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                            Liste aller unbeantworteten Fix Desk Anfragen inkl. Meta Informationen
+                        </li>
+                        <li>
+                          => Raum und Arbeitsplatz
+                        </li>
+                        <li>
+                            => Name des Users
+                        </li>
+                        <li>
+                            => Datum der Anfrage
+                        </li>
+                        <li>
+                            => Admin kann eine Anfrage genehmigen oder ablehnen
+                        </li>
+                    </ul>
+                </section>
+
+        <!-- userliste -->
+                <section class="presentation_sub-section" data-sub-section-count="10" tabindex="1">
+                    <h3 class="presentation_heading-3">Userliste</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/users-xs.png" alt="User Landing Page der App">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                            Auflistung aller registrierter User sortiert nach Neu hinzugekommenen und älteren
+                        </li>
+                        <li>
+                          Hinweis auf die Rolle eines Benutzers => Admin oder User
+                        </li>
+                        <li>
+                            aktuelle User Anzahl wird in das Storage gespeichert um später zwischen neuen und alten Usern unterscheiden zu können
+                        </li>
+                    </ul>
+                </section>
+
+        <!-- control buttons for the sub sections -->
+                <div class="presentation_container-sub-sec-control">
+                    <span class="presentation_sub-sec-control" data-sub-section-count="1"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="2"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="3"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="4"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="5"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="6"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="7"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="8"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="9"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="10"></span>
+                </div>
+            </section>
+
+            <section class="presentation_section" data-section-id="4">
+                <h2 class='presentation_heading-2'>Projektplanung und Organisation</h2>
+
+                <section class="presentation_sub-section" data-sub-section-count="1" tabindex="1">
+                    <h3 class="presentation_heading-3">Initiale Besprechung</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/meeting-small.png" alt="Meeting">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                            Anforderungen an die App
+                        </li>
+                        <li>
+                          Technologien die wir verwenden wollten
+                        </li>
+                        <li>
+                            Art und Weise der Zusammenarbeit <br>
+                            => 3 tägliche Meetings <br>
+                            => bis 16 Uhr jederzeit erreichbar
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="presentation_sub-section" data-sub-section-count="2" tabindex="1">
+                    <h3 class="presentation_heading-3">Gitlab und Scrumban</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/gitlab-sc-small.png" alt="Gitlab Boards">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                            Gitlab als Platform für die Planung
+                        </li>
+                        <li>
+                          Scrumban als Projektmanagment Methode
+                        </li>
+                        <li>
+                          von Scrum die Idee des Sprints <br> 
+                          => ein Sprint dauerte bei uns 1 Woche
+                        </li>
+                        <li>
+                            von Kanban die Organisation in Boards und Tickets <br>
+                            => insgesamt hatten wir 4 Boards und 41 Tickets
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="presentation_container-sub-sec-control">
+                    <span class="presentation_sub-sec-control" data-sub-section-count="1"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="2"></span>
+                </div>
+            </section>
+
+            <section class="presentation_section" data-section-id="5">
+                <h2 class='presentation_heading-2'>Meine Aufgaben</h2>
+
+                <section class="presentation_sub-section" data-sub-section-count="1" tabindex="1">
+                    <h3 class="presentation_heading-3">Übersicht</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/post-it-notes.jpg" alt="Laptop mit post it`s">
+                    </figure>
+
+                    <ul class="presentation_key-points long-list">
+                        <li>
+                            Teamarbeit Mockup Entwurf
+                        </li>
+                        <li>
+                          die Einrichtung des Projekts für das Team
+                        </li>
+                        <li>
+                           initiale Readme Datei
+                        </li>
+                        <li>
+                            Postman Collection
+                        </li>
+                        <li>
+                            die Routen der App
+                        </li>
+                        <li>
+                            Pfadweiterleitung
+                        </li>
+                        
+                        <li>
+                            gemeinsame Navigation inkl. Trennung zwischen Admin und User Bereiche
+                        </li>
+                        <li>
+                            Booking Page
+                        </li>
+                        <li>
+                            Favoriten Page
+                        </li>
+                        <li>
+                            Admin Bereich Fix Desk Requests
+                        </li>
+                        <li>
+                           Design Implementierungen aller von mir erstellter Bereiche
+                        </li>
+                        <li>
+                            Testen und Bug`s fixen
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="presentation_sub-section" data-sub-section-count="2" tabindex="1">
+                    <h3 class="presentation_heading-3">Im Fokus - Postman Collection</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/gitlab-sc-small.png" alt="Gitlab Boards">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                            Überblick über die Funktionalitäten der API
+                        </li>
+                        <li>
+                            testen der verschiedenen Endpunkte
+                        </li>
+                        <li>
+                            Dokumentation und Zusammenfassung der API Endpunkte und deren Tests in der README Datei
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="presentation_sub-section" data-sub-section-count="3" tabindex="1">
+                    <h3 class="presentation_heading-3">Im Fokus - die Routen der App</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/editor-sc-small.png" alt="Gitlab Boards">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                            React Router
+                        </li>
+                        <li>
+                            insgesamt 3 große Pfade
+                        </li>
+                        <li>
+                            => nicht eingeloggte User
+                        </li>
+                        <li>
+                            => normale User
+                        </li>
+                        <li>
+                            => Admins
+                        </li>
+                        <li>
+                            weitere Unter Routen für Administratoren und für User
+                        </li>
+                        <li>
+                            Anfangs Simulation mit dummy Komponenten um für alle einen guten Überblick über den Aufbau und Funktionsweise der Pfade zu schaffen
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="presentation_sub-section" data-sub-section-count="4" tabindex="1">
+                    <h3 class="presentation_heading-3">Im Fokus - Booking Page</h3>
+
+                    <figure class="presentation_figure">
+                        <img src="pics/booking-page-sm.png" alt="Gitlab Boards">
+                    </figure>
+
+                    <ul class="presentation_key-points">
+                        <li>
+                            mit React States werden Programmabläufe gesteuert
+                        </li>
+                        <li>
+                            es gibt zwei unterschiedliche Programmzweige im Code <br>
+                            => einen für Fix Desk und einen für Flex Desk Buchungen
+                        </li>
+                        <li>
+                            um verfügbare Tische zu finden wird <br>
+                            => mit dem JS Date Objekt gearbeitet
+                            => den Array Methoden .filter() und .some()
+                            => mit der JS fetch API
+                        </li>
+                        <li>
+                            Liste aller Arbeitsplätze vs augeschiedene Buchungen
+                        </li>
+                    </ul>
+                </section>
+
+
+                <div class="presentation_container-sub-sec-control">
+                    <span class="presentation_sub-sec-control" data-sub-section-count="1"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="2"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="3"></span>
+                    <span class="presentation_sub-sec-control" data-sub-section-count="4"></span>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="../src/js/play-button.js"></script>
+    <script src="../src/js/control.js"></script>
+    <script src="../src/js/openTheNavigation.js"></script>
 </body>
 </html>
