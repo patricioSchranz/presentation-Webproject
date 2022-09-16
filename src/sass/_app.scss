@@ -413,7 +413,7 @@ body{
         // @include testing-border-3();
         width: 50vw;
         height: calc(90vh - 6rem);
-        // @include flex-variable(column, nowrap, center, flex-start, flex-start);
+        @include flex-variable(column, nowrap, center, flex-start, flex-start);
         font-size: 1.5rem;
         padding-left: 10%;
         // overflow-y: scroll;
@@ -441,6 +441,7 @@ body{
 
     &_key-points.long-list{
         overflow-y: scroll;
+        display: block;
 
         &::-webkit-scrollbar-track{
             box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
