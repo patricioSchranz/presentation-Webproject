@@ -4,6 +4,8 @@
 
 Für meinen Abschluss eines Web Developer Lehrgangs an der FH, musste ich eine Präsentation über mein Abschlussprojekt verfassen. Ich hatte die Idee, ein Webprojekt daraus zu machen und dies ist das Resultat. Aus Zeitmangel fehlen ausführliche Code Kommentierungen, oder eine ausgiebige Beschreibung hier in der README. Bei ausreichend Luft, werde ich das aber nach holen. 
 
+
+
 ## Bedienung
 
 1. Mit dem Mouswheel kann man zwischen den einzelnen Kapiteln sliden

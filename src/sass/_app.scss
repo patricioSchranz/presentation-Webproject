@@ -413,7 +413,7 @@ body{
         // @include testing-border-3();
         width: 50vw;
         height: calc(90vh - 6rem);
-        @include flex-variable(column, nowrap, center, flex-start, flex-start);
+        // @include flex-variable(column, nowrap, center, flex-start, flex-start);
         font-size: 1.5rem;
         padding-left: 10%;
         // overflow-y: scroll;
