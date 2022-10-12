@@ -21,4 +21,4 @@ Wenn du diese Präsentations (Mini App?) für deine Zwecke verwenden willst, bra
 1. dich an die Klassennamen haltest => Sowohl der SASS, als auch der Java Script Code arbeitet mit ihnen
 2. das du die richtigen Data Attribute verwendest
 
-Es ist geplant eine genauer Beschreibung der Funktionsweisen in diese README Datei zu schreiben. Momentan fehlt mir dafür die Zeit und auch um den Code besser zu Kommentieren, aber vielleicht kannst du dich trotzdem orientieren und diese Mini App, oder Website, je nachdem wie man das betrachten will, für dich nutzen.
+Es ist geplant eine genauer Beschreibung der Funktionsweisen in diese README Datei zu schreiben. Momentan fehlt mir dafür die Zeit und auch um den Code besser zu kommentieren, aber vielleicht kannst du dich trotzdem orientieren und diese Mini App, oder Website, je nachdem wie man das betrachten will, für dich nutzen.
